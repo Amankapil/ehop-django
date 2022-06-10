@@ -4,6 +4,9 @@ from store.models.customer import Customer
 from django.views import View
 
 
+class About(View):
+    def get(self, request):
+        return render(request, 'about.html')
 class Signup(View):
     def get(self, request):
         return render(request, 'signup.html')
